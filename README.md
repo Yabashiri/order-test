@@ -1,2 +1,4 @@
 # Order test page
-LWC code for an order front page
+Manifest includes a custom order object
+
+LWC front-page
