@@ -13,9 +13,7 @@
                 </lightning-input-field>
                 <lightning-input-field field-name="Payment_Period__c">
                 </lightning-input-field>
-                <lightning-input-field field-name="Client__c" value={selectedRecordId}>
-                </lightning-input-field>
-
+                <!--custom lookup form-->
                 <div class="slds-card">
                     <c-custom-lookup field-label="Relate to" child-object-api-name='Order_custom__c'
                         target-field-api-name='Client__c' required onvalueselected={handleValueSelected}>

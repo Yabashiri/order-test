@@ -21,5 +21,9 @@ export default class App extends LightningElement {
 }
 
   handleSubmit(event) {
+    event.preventDefault(); //prevent default behaviour
+    const fields = event.detail.fields;
+    fields.Client__c = this.selectedRecordId[0]; //create a custom Client__c record
+    this.template.querySelector('lightning-record-edit-form').submit(fields);
   }
 }
