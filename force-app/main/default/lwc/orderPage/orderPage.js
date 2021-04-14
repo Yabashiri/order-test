@@ -2,6 +2,7 @@ import { LightningElement } from "lwc";
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 
 export default class App extends LightningElement {
+  objectname = "Order_custom__c";
   title = "Order";
   orderPageIsVisible = true;
 
@@ -18,4 +19,7 @@ export default class App extends LightningElement {
     });
     this.dispatchEvent(event);
 }
+
+  handleSubmit(event) {
+  }
 }

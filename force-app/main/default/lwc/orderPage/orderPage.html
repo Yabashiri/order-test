@@ -3,7 +3,7 @@
         <h1 class="slds-text-heading_large">{title}</h1>
 
         <template if:true={orderPageIsVisible}>
-            <lightning-record-edit-form object-api-name="Order_custom__c" onsuccess={handleSuccess}>
+            <lightning-record-edit-form object-api-name={objectname} onsubmit={handleSubmit} onsuccess={handleSuccess}>
                 <lightning-messages>
                 </lightning-messages>
 
