@@ -5,6 +5,11 @@ export default class App extends LightningElement {
   title = "Order";
   orderPageIsVisible = true;
 
+  selectedRecordId; //store the record id of the selected 
+  handleValueSelected(event) {
+      this.selectedRecordId = event.detail;
+  }
+
   handleSuccess() {
     const event = new ShowToastEvent({
         variant: 'success',
